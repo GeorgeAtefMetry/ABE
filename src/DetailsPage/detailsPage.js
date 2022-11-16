@@ -18,7 +18,7 @@ const DetailsPage = () => {
             </div>
 
 
-
+{/* ldmld */}
             <div className='row'>
 
                 
