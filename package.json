@@ -2,7 +2,7 @@
   "name": "abe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://georgeatefmetry.github.io/ABE",
+  "homepage": "https://georgeatefmetry.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
