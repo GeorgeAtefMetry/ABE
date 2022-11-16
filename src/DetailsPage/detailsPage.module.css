@@ -1,0 +1,78 @@
+body{
+    background-image: url('../images/bg.jpg');
+    background-blend-mode: overlay;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: Fixed;
+    background-color: #00000033;
+    background-size: cover;
+}
+.images{
+    text-align: center;
+    height: 30vh;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.infoSys img{
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+}
+.buttons button{
+    font-size: 35px;
+    width: 280px;
+    font-weight: bold;
+    border: none;
+    color: var(--fontColor);
+    border-radius: 20px;
+    background-color: var(--DarkGray);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.433);
+    transition:  all .5s;
+}
+.buttons button:focus-visible, .buttons button:focus, .buttons button:active, .buttons button:hover{
+    transition:  all .5s;
+    background-color: var(--green) !important;
+    font-size: 40px;
+}
+@media screen and (max-width:480px){
+
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    .infoSys img{
+        width: 100px;
+        height: 100px;
+        float: right;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        min-height: 30vh;
+        width: 100%;
+        margin: auto;
+        align-items: flex-start;
+    }
+    .buttons button{
+        font-size: 25px;
+        width: 90vw;
+        margin-bottom: 40px;
+    }
+    .buttons button:hover{
+        transition:  all .5s;
+        background-color: var(--green);
+        font-size: 30px;
+    }
+}
