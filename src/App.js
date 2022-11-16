@@ -12,7 +12,9 @@ function App() {
     <Router>
           <Switch>
             <Route path="/" exact component={DetailsPage}></Route>
-            {/* <Route path="*"  component={Notfound}></Route> */}
+            <Route path="/ABE" exact component={DetailsPage}></Route>
+            <Route path="/DetailsPage" exact component={DetailsPage}></Route>
+            <Route path="*"  component={DetailsPage}></Route>
           </Switch>
         </Router> 
     </>
