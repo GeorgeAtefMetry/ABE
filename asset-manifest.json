@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ABE/static/css/main.dcb809fc.css",
+    "main.js": "/ABE/static/js/main.47577f9f.js",
+    "static/js/787.c0e70a57.chunk.js": "/ABE/static/js/787.c0e70a57.chunk.js",
+    "static/media/logo.png": "/ABE/static/media/logo.b9d84d6426c7ead5f1d8.png",
+    "static/media/bg.jpg": "/ABE/static/media/bg.4c1092f56c557e6e6062.jpg",
+    "static/media/infosys.png": "/ABE/static/media/infosys.93ccff4ee4267817e924.png",
+    "index.html": "/ABE/index.html",
+    "main.dcb809fc.css.map": "/ABE/static/css/main.dcb809fc.css.map",
+    "main.47577f9f.js.map": "/ABE/static/js/main.47577f9f.js.map",
+    "787.c0e70a57.chunk.js.map": "/ABE/static/js/787.c0e70a57.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcb809fc.css",
+    "static/js/main.47577f9f.js"
+  ]
+}
