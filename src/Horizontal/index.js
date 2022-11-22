@@ -11,24 +11,24 @@ import { IoMdLogOut } from 'react-icons/io';
 const Navbar = () => {
   return (
     <>
-      <Nav>
-        <NavLink to='/'>
-        <img style={{ width:'122px'}}src={logoAgri} />
+      <Nav className='fixed-top' >
+        <NavLink to='/' style={{marginBottom:100}}>
+        <img style={{ width:'70px'}}src={logoAgri} />
         </NavLink>
         <NavMenu>
-          <NavLink to='/Horizontal' activeStyle>
+          <NavLink to='/Vault' activeStyle>
             Vault
           </NavLink>
-          <NavLink to='/Horizontal' activeStyle>
+          <NavLink to='/Transactions' activeStyle>
             Transactions  
           </NavLink>
-          <NavLink to='/Horizontal' activeStyle>
+          <NavLink to='/Transfer' activeStyle>
             Transfer
           </NavLink> 
-          <NavLink to='/Horizontal' activeStyle>
+          <NavLink to='/Payment' activeStyle>
             Payment Order
           </NavLink> 
-          <NavLink to='/Horizontal' activeStyle>
+          <NavLink to='/Demond' activeStyle>
             Demond Draft
           </NavLink> 
           <NavLink to='/inquires'  activeStyle>
@@ -36,7 +36,7 @@ const Navbar = () => {
           </NavLink> 
         </NavMenu>
         <NavLink to='/'>
-        <img style={{ width:'120px'}}src={logoFinacle} />
+        <img style={{ width:'70px'}}src={logoFinacle} />
         </NavLink>
       </Nav>
     </>

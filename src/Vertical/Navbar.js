@@ -59,9 +59,9 @@ function Navbar({icon, item, path}) {
             <li className='navbar-toggle'>
             </li>
             {/* {SidebarData.map((item, index) => { */}
-                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'OPEN'} />;
+                {/* <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'OPEN'} />;
                 <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'Modify'} />;
-                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'Close'} />;
+                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'Close'} />; */}
             {/* })} */}
           </ul>
         </nav>
