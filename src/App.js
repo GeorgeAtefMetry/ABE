@@ -7,11 +7,14 @@ import {
 import DetailsPage from './DetailsPage/detailsPage'
 import './App.css'
 import Inquires from './Inquires/Inquires';
+import Teller from './Nader/Teller'
 function App() {
   return (
     <>
     <Router>
           <Switch>
+          <Route path="/teller" exact component={Teller}></Route>
+
             <Route path="/" exact component={DetailsPage}></Route>
             <Route path="/ABE" exact component={DetailsPage}></Route>
             <Route path="/detailspage" exact component={DetailsPage}></Route>
