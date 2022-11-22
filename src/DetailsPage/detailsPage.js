@@ -22,7 +22,7 @@ const DetailsPage = () => {
 
 {/* ldmld */}
             <div className='row'>
-geg
+
                 
         {/* ___ht______________________________________________________________ */}
                 <div className={classes.buttons}>
