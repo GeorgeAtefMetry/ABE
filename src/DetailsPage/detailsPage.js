@@ -22,9 +22,9 @@ const DetailsPage = () => {
 
 {/* ldmld */}
             <div className='row'>
-
+geg
                 
-        {/* _________________________________________________________________ */}
+        {/* ___ht______________________________________________________________ */}
                 <div className={classes.buttons}>
                     <div className='col-lg-3 col-md-4 animate__animated animate__bounceInLeft '>
                     <a href='/Teller'> <Button variant="primary">Teller</Button></a>
