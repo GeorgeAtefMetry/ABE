@@ -4,6 +4,7 @@ import { SidebarData } from './SidebarData';
 import styled from "styled-components";
 import './Navbar.css';
 import SubMenu from "./SubMenu";
+import * as AiIcons from 'react-icons/ai';
 
 const Nav = styled.div`
   background: #12121E;
@@ -44,7 +45,7 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
   
-function Navbar() {
+function Navbar({icon, item, path}) {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -57,9 +58,11 @@ function Navbar() {
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
             </li>
-            {SidebarData.map((item, index) => {
-               return <SubMenu item={item} key={index} />;
-            })}
+            {/* {SidebarData.map((item, index) => { */}
+                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'OPEN'} />;
+                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'Modify'} />;
+                <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'Close'} />;
+            {/* })} */}
           </ul>
         </nav>
     </>

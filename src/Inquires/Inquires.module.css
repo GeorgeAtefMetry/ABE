@@ -1,0 +1,50 @@
+.ulList a:focus{
+    background-color: #252831;
+}
+.ulList a,.nav-menu-items a{
+    height: 0px !important;
+    padding: 40px 10px !important;
+}
+.ianc{
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+}
+.iddt{
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+
+}
+.iddt span{
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.icb{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+
+}
+.icb span{
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}

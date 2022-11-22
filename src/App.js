@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import DetailsPage from './DetailsPage/detailsPage'
 import './App.css'
+import Inquires from './Inquires/Inquires';
 function App() {
   return (
     <>
@@ -13,8 +14,9 @@ function App() {
           <Switch>
             <Route path="/" exact component={DetailsPage}></Route>
             <Route path="/ABE" exact component={DetailsPage}></Route>
-            <Route path="/DetailsPage" exact component={DetailsPage}></Route>
-            <Route path="*"  component={DetailsPage}></Route>
+            <Route path="/detailspage" exact component={DetailsPage}></Route>
+            <Route path="/inquires" exact component={Inquires}></Route>
+            {/* <Route path="*"  component={DetailsPage}></Route> */}
           </Switch>
         </Router> 
     </>
