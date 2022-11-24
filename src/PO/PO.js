@@ -35,6 +35,9 @@ const PO = () => {
                         -Add ACH Payment Order <br></br>
                     2- MPOR (CHECKER) <br></br>
                         -Maintain Payment Order <br></br>
+                        <p>
+                            -داخل مصر
+                        </p>
                 </div>
 
                 <div className={classes.eswift} id="eswift">
@@ -42,6 +45,9 @@ const PO = () => {
                         -Add E-Swift Payment Order <br></br>
                     2- MPOR (CHECKER) <br></br>
                         -Maintain Payment Order <br></br>
+                        <p>
+                            -داخل مصر
+                        </p>
                 </div>
 
                 <div className={classes.swift} id="swift">
@@ -49,6 +55,10 @@ const PO = () => {
                         -Add Swift Payment Order <br></br>
                     2- MPOR (CHECKER) <br></br>
                         -Maintain Payment Order <br></br>
+                        <p>
+                            -خارج مصر
+                            -ممكن يبقي داخل مصر بس بتكلفة اعلي من المتاح بالداخل
+                        </p>
                 </div>
 
 
