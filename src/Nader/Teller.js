@@ -37,7 +37,7 @@ class Teller extends Component {
              <Button   variant="primary">Non Cash</Button>
             </div>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInBottomRight '>
-                <a href='/demandDraft'><Button variant="primary">Cheque</Button></a>
+                <Button variant="primary">Cheque</Button>
             </div>
             
             
