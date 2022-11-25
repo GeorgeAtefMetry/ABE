@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Inquires.module.css'
-import './inquire.css'
 import Vertical from '../Vertical/Navbar'
 import SubMenu from '../Vertical/SubMenu';
 import Horizontal from '../Horizontal'
@@ -10,30 +9,34 @@ import { Link } from 'react-scroll';
 import mov from './1.MOV'
 import '../../node_modules/video-react/dist/video-react.css'
 import { Player, ControlBar, PlayToggle } from 'video-react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState } from 'react';
+import { BiLogInCircle } from "react-icons/bi";
 const Inquires = () => {
-    function close(e) {
-        e.className= ''
+    const [open, setOpen] = useState(false);
+    const close = e => {
+        setOpen(current => !current)
     }
     return (
         <>
 
         
         
-        
         <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
-                <nav className={SidebarData? 'nav-menu active' : 'nav-menu'}>
-                    <ul className={`nav-menu-items ${classes.ulList}`} >
-                    {/* <button onClick={(e) => close(e.target)} style={{float:"right"}}>=</button>  */}
-                    
+            <div className='col-2' style={{zIndex:1000}}>
+                {/* Toggle */}
+
+                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                    <ul className= {`nav-menu-items ${classes.ulList}`} >
+
                     <SubMenu item={'INQUIRES - استعلامات'}  style={{float:"left"}}/>
+                    
+                    <div class="toggle-setting">
+                        <p 
+                            onClick={close}
+                            className={ "fa-gear "}><BiLogInCircle/></p>
+                    </div>
+                    
+                {/* End Toggle */}
 
                         <Link to='ial'>
                             <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />}  item={'IAL'}/>
@@ -55,92 +58,94 @@ const Inquires = () => {
                 </nav>
             </div>
 
-            <div className='col-9' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-lg-10' style={{color:'white',padding:0, margin:'auto'}}>
             <Horizontal ></Horizontal>
             
             <div className={classes.mainIal} id="ial">
-                    <div className={classes.ial} style={{padding:30}}>
-                            <span>IAL</span>
-                        <p>
-                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
-                        </p>
-                        <div className={classes.video} 
-                                onContextMenu={(e)=> e.preventDefault()}>
-                            <Player
-                                playsInline
-                                src={mov}
-                            >
-                                <ControlBar autoHide={false} disableDefaultControls={true}>
-                                    <PlayToggle />
-                                </ControlBar>
-                            </Player>
-                        </div>
+                <div className={classes.ial} style={{padding:30}}>
+                        <span>IAL</span>
+                    <p>
+                    قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
                     </div>
                 </div>
+            </div>
 
-                <div className={classes.mainIanc} id="ianc">
-                    <div className={classes.ianc} style={{padding:30}}>
-                            <span>IANC</span>
-                        <p>
-                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
-                        </p>
-                        <div className={classes.video} 
-                                onContextMenu={(e)=> e.preventDefault()}>
-                            <Player
-                                playsInline
-                                src={mov}
-                            >
-                                <ControlBar autoHide={false} disableDefaultControls={true}>
-                                    <PlayToggle />
-                                </ControlBar>
-                            </Player>
-                        </div>
+            <div className={classes.mainIanc} id="ianc">
+                <div className={classes.ianc} style={{padding:30}}>
+                        <span>IANC</span>
+                    <p>
+                    قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
                     </div>
                 </div>
+            </div>
 
-                <div className={classes.mainIddt} id="iddt">
-                    <div className={classes.iddt} style={{padding:30}}>
-                        <span>Inquire on Demand Draft</span>
-                        <br></br>
-                            شاشه خاصه بالاستعلام عن الشيك/ الشيكات المصرفية ..
 
-                            .... الشيك المصرفي زي ما اتفقنا القيمة بتتخصم من ح/ العميل وبيتم إضافتها إلي ح/ داخلي ...
-                            إسم الحساب الداخلي ده ح/ اوراق دفع إصدار شيكات مصرفية،،،،،،، قد يختلف المسمى من بنك لبنك ومن شجرة محاسبية إلى شجرة محاسبية اخرى لكن عندي الشئ المشترك ان البنك بيحصل على قيمة الشيك من العميل بمجرد قيام العميل بطلب اصدار الشيك وبيديله شيك محرر على نماذج البنك.
+            <div className={classes.mainIddt} id="iddt">
+                <div className={classes.iddt} style={{padding:30}}>
+                        <span>IDDT</span>
+                    <p>
+                                        شاشه خاصه بالاستعلام عن الشيك/ الشيكات المصرفية ..
 
-                            بمعنى تان وانا داخل استعلم بدخل برقم الشيك إللي بيخص البنك وليس من دفتر شيكات العملاء وهكذا...
-                            
-                        <div className={classes.video} 
-                                onContextMenu={(e)=> e.preventDefault()}>
-                            <Player
-                                playsInline
-                                src={mov}
-                            >
-                                <ControlBar autoHide={false} disableDefaultControls={true}>
-                                    <PlayToggle />
-                                </ControlBar>
-                            </Player>
-                        </div>
+                    .... الشيك المصرفي زي ما اتفقنا القيمة بتتخصم من ح/ العميل وبيتم إضافتها إلي ح/ داخلي ...
+                    إسم الحساب الداخلي ده ح/ اوراق دفع إصدار شيكات مصرفية،،،،،،، قد يختلف المسمى من بنك لبنك ومن شجرة محاسبية إلى شجرة محاسبية اخرى لكن عندي الشئ المشترك ان البنك بيحصل على قيمة الشيك من العميل بمجرد قيام العميل بطلب اصدار الشيك وبيديله شيك محرر على نماذج البنك.
+
+                    بمعنى تان وانا داخل استعلم بدخل برقم الشيك إللي بيخص البنك وليس من دفتر شيكات العملاء وهكذا...
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
                     </div>
                 </div>
+            </div>
 
-                <div className={classes.mainIcb} id="icb">
-                    <div className={classes.icb} style={{padding:30}}>
-                        <span>INQUIRE ON CHEQUE BOOK</span>
-                        <br></br>
+            <div className={classes.mainIcb} id="icb">
+                <div className={classes.icb} style={{padding:30}}>
+                        <span>ICB</span>
+                    <p>
                         بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
-                        <div className={classes.video} 
-                                onContextMenu={(e)=> e.preventDefault()}>
-                            <Player
-                                playsInline
-                                src={mov}
-                            >
-                                <ControlBar autoHide={false} disableDefaultControls={true}>
-                                    <PlayToggle />
-                                </ControlBar>
-                            </Player>
-                        </div>
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         </>

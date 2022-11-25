@@ -6,3 +6,48 @@
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
+
+.toggle-setting{
+    display: none;
+}
+@media(max-width:500px) {
+    .navbar-collapse{
+        background-color: #FFF;
+    }
+    .navbar-collapse a{
+        margin-left: 10%;
+    }
+    .toggle-setting{
+        display: block;
+        right: -36px;
+        position: absolute;
+        text-align: center;
+        top: 90px;
+        background-color: #FFF;
+        padding: 0px 30px 0 10px;
+        border-radius: 0 10px 10px 0;
+        width: 15px;
+        font-size: 27px;
+        cursor: pointer;
+        transition: .3s;
+        color:var(--fontColor);
+        height:45px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
+        transition: 1s;
+    }
+    .fa-gear{
+        margin: 0;
+        transition: 1s;
+    }
+    .toggle-setting:hover{
+        transition: 1s;
+    }
+    .activeClose{
+        left:-210px !important;
+        transition: 1s;
+    }
+}
+
+.col-2{
+    width: 11.666667%;
+}

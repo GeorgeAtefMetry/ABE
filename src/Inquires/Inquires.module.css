@@ -13,7 +13,8 @@
     height: 100vh;
 }
 
-.ial, .ianc{
+.ial, .ianc,
+.iddt, .icb{
     text-align: center;
     border-radius: 20px;
     height: 80vh;
@@ -22,7 +23,9 @@
     /* background-color: rgba(0, 0, 0, 0.504); */
 }
 .ial p,
-.ianc p{
+.ianc p,
+.iddt p,
+.icb p{
     background-color: var(--DarkGray);
     color: var(--green);
     padding: 10px;
@@ -31,11 +34,20 @@
     box-shadow: -5px 11px 19px #00000091;
 }
 .ial span,
-.ianc span{
+.ianc span,
+.iddt span,
+.icb span{
     float: left;
     background-color: var(--fontColor);
     padding: 10px;
     border-radius: 10px 0 10px 0 ;
+}
+.ial .video span,
+.ianc .video span,
+.iddt .video span,
+.icb .video span{
+    background-color: transparent;
+    padding: 0;
 }
 .ial .video,
 .ianc .video,
@@ -48,35 +60,47 @@
 
 
 .iddt{
-    margin-top: 20px;
     height: 100vh;
     float: right;
     text-align: right;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
+    /* background-color: rgba(0, 0, 0, 0.504); */
     padding: 30px 10px;
     border-radius: 20px;
 
 }
-.iddt span{
+/* .iddt span{
     float: left;
     text-align: left;
     font-weight: bold;
-}
+} */
 .icb{
     width: 100%;
-    margin-top: 20px;
     float: right;
     text-align: right;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
+    /* background-color: rgba(0, 0, 0, 0.504); */
     padding: 30px 10px;
     border-radius: 20px;
     height: 100vh;
 
 }
-.icb span{
+/* .icb span{
     float: left;
     text-align: left;
     font-weight: bold;
+} */
+@media(max-width:500px) {
+    .ial p,
+    .ianc p,
+    .iddt p,
+    .icb p{
+        height: 80%;
+    }
+    .ial .video,
+    .ianc .video,
+    .iddt .video,
+    .icb .video{
+        width: 100%;
+    }
 }

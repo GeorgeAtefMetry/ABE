@@ -22,35 +22,32 @@ class Teller extends Component {
         </div>
         <div className='row'>
           <div className={classes.buttons}>
-          <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>\
-          <a href='/inquires'> <Button   variant="primary ">Inquier</Button></a>
-          
-</div>
+            <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>
+              <a href='/inquires'> <Button   variant="primary ">Inquires</Button></a>
+            </div>
+            <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>
+              <a href='/paymentOrder'> <Button   variant="primary ">Payment Order</Button></a>
+            </div>
           </div>
-
         </div>
 
     </div>
     <div className='row '>    
         <div className={classes.buttons}>
             <div className='col-lg-3 col-md-4  animate__animated animate__fadeInBottomLeft '>
-             <Button   variant="primary">Non Cash</Button>
+            <a href='/inquires'> <Button   variant="primary">Non Cash</Button></a>
             </div>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInBottomRight '>
-                <Button variant="primary">Cheque</Button>
+            <a href='/demandDraft'>  <Button variant="primary">Demand Draft</Button></a>
             </div>
             
-            
-           
         </div>
     </div>
-
-           
     </div>
 
     
       </>
-     );
+    );
   }
 }
  
