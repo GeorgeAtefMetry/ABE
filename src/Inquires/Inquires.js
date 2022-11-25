@@ -26,7 +26,7 @@ const Inquires = () => {
             <div className='col-2' style={{zIndex:1000}}>
                 {/* Toggle */}
 
-                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                <nav style={{padding:6}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
                     <SubMenu item={'INQUIRES-استعلامات'}  style={{float:"left"}}/>

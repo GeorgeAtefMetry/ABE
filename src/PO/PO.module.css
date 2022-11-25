@@ -47,18 +47,7 @@
     padding: 10px;
     border-radius: 10px 0 10px 0 ;
 }
-@media(max-width:500px) {
-    .ach p,
-    .eswift p,
-    .swift p{
-        height: 80%;
-    }
-    .ach .video,
-    .eswift .video,
-    .swift .video{
-        width: 100%;
-    }
-}
+
 .ach p,.eswift p,.swift p{
     background-color: var(--DarkGray);
     color: var(--green);
@@ -76,9 +65,21 @@
 .ach .video,
 .eswift .video,
 .swift .video{
-    width: 80%;
+    width: 60%;
     margin: auto;
     box-shadow: -10px 11px 19px #00000091;
+}
+@media(max-width:500px) {
+    .ach p,
+    .eswift p,
+    .swift p{
+        height: 80%;
+    }
+    .ach .video,
+    .eswift .video,
+    .swift .video{
+        width: 100%;
+    }
 }
 /* .ach, .eswift,
 .swift{

@@ -20,10 +20,10 @@ const DD = () => {
     return (
         <>
         <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
+            <div className='col-2' style={{zIndex:1000}}>
                 {/* Toggle */}
                 
-                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                <nav style={{padding:20}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
                     <SubMenu item={'Demand Draft'}  style={{float:"left"}}/>
@@ -66,7 +66,7 @@ const DD = () => {
                     </ul>
                 </nav>
             </div>
-            <div className='col-lg-10' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-lg-10' style={{color:'white', margin:'auto'}}>
             <Horizontal ></Horizontal>
 
             <div className={classes.mainIssue} id="issue">

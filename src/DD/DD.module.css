@@ -1,30 +1,4 @@
-.issue span,
-.disbursement span,
-.stop span,
-.lost span,
-.print span,
-.reprint span,
-.cancel span{
-    float: left;
-    background-color: var(--fontColor);
-    padding: 10px;
-    border-radius: 10px 0 10px 0 ;
-}
 
-@media(max-width:500px) {
-    .ial p,
-    .ianc p,
-    .iddt p,
-    .icb p{
-        height: 80%;
-    }
-    .ial .video,
-    .ianc .video,
-    .iddt .video,
-    .icb .video{
-        width: 100%;
-    }
-}
 .ulList a:focus{
     background-color: #252831;
 }
@@ -38,6 +12,7 @@
     padding: 70px 0 20px 0;
     height: 100vh;
 }
+
 .issue, .disbursement,
 .stop, .lost, .print, .reprint, .cancel{
     text-align: center;
@@ -47,6 +22,7 @@
     text-align: right;
     /* background-color: rgba(0, 0, 0, 0.504); */
 }
+
 .issue p,
 .disbursement p,
 .stop p,
@@ -61,6 +37,19 @@
     font-weight: bold;    
     box-shadow: -5px 11px 19px #00000091;
 }
+.issue span,
+.disbursement span,
+.stop span,
+.lost span,
+.print span,
+.reprint span,
+.cancel span{
+    float: left;
+    background-color: var(--fontColor);
+    padding: 10px;
+    border-radius: 10px 0 10px 0 ;
+}
+
 .issue .video span,
 .disbursement .video span,
 .stop .video span,
@@ -152,4 +141,22 @@
     padding: 30px 10px;
     border-radius: 20px;
     height: 100vh;
+}
+
+@media(max-width:500px) {
+    .ial p,
+    .ianc p,
+    .iddt p,
+    .icb p{
+        height: 80%;
+    }
+    .issue .video,
+    .disbursement .video,
+    .stop .video,
+    .lost .video,
+    .print .video,
+    .reprint .video,
+    .cancel .video{ 
+        width: 100%;
+    }
 }

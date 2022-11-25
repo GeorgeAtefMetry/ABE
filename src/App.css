@@ -9,6 +9,7 @@
 
 .toggle-setting{
     display: none;
+    z-index: 20000;
 }
 @media(max-width:500px) {
     .navbar-collapse{
@@ -19,10 +20,10 @@
     }
     .toggle-setting{
         display: block;
-        right: -36px;
+        right: -25%;
         position: absolute;
         text-align: center;
-        top: 90px;
+        top: 15%;
         background-color: #FFF;
         padding: 0px 30px 0 10px;
         border-radius: 0 10px 10px 0;

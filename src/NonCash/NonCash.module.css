@@ -1,3 +1,4 @@
+
 .transfer span,
 .customerInduced span,
 .bankInduced span,
@@ -21,7 +22,7 @@
 .bankInduced .video,
 .postTransfer .video,
 .reversal .video{
-    width: 80%;
+    width: 60%;
     margin: auto;
     box-shadow: -10px 11px 19px #00000091;
 }

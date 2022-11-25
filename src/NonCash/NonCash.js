@@ -19,10 +19,10 @@ const DD = () => {
     return (
         <>
             <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
+            <div className='col-2' style={{ zIndex:1000}}>
                 {/* Toggle */}
                 
-                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                <nav style={{padding:6}}className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
                     <SubMenu item={'Non Cash - غير نقدي'}  style={{float:"left"}}/>
@@ -83,7 +83,7 @@ const DD = () => {
                         </Player>
                     </div>
                 </div>
-                </div>
+            </div>
 
                 <div className={classes.mainCI} id="customerInduced">
                 <div className={classes.customerInduced} style={{padding:30}}>

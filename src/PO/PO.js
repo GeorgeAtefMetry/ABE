@@ -18,17 +18,16 @@ const PO = () => {
     }
     return (
         <>
-
         <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
+            <div className='col-2' style={{zIndex:1000}}>
                 {/* Toggle */}
                 
-                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                <nav style={{paddingRight:16}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
                     <SubMenu item={'Payment Order'}  style={{float:"left"}}/>
                     
-                    <div class="toggle-setting">
+                    <div className="toggle-setting">
                         <p 
                             onClick={close}
                             className={ "fa-gear "}><BiLogInCircle/></p>
@@ -49,7 +48,7 @@ const PO = () => {
                     </ul>
                 </nav>
             </div>
-            <div className='col-lg-10' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-lg-10' style={{color:'white',padding:0}}>
             <Horizontal ></Horizontal>
 
                 <div className={classes.mainAch} id="ach">
