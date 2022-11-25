@@ -16,6 +16,7 @@ const Inquires = () => {
     const close = e => {
         setOpen(current => !current)
     }
+    // sss
     
     return (
         <>
