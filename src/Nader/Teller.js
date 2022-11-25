@@ -31,22 +31,8 @@ class Teller extends Component {
           <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
           <Button   variant="primary ">Payment Order</Button></div>
 
-              <Button   variant="primary ">Vault</Button>
-              </div>
-              <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
-                  <Button variant="primary">Cash</Button>
-              </div>
-
         </div>
-        <div className='row'>
-          <div className={classes.buttons}>
-          <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>\
-          <a href='/inquires'> <Button   variant="primary ">Inquier</Button></a>
-          
-</div>
-          </div>
-          
-        </div>
+       
 
     </div>
     <div className='row '>    
@@ -62,7 +48,8 @@ class Teller extends Component {
            
         </div>
     </div>
-
+    
+</div>
            
     </div>
 

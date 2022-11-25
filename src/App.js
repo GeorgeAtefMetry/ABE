@@ -7,15 +7,11 @@ import {
 import DetailsPage from './DetailsPage/detailsPage'
 import './App.css'
 import Inquires from './Inquires/Inquires';
-<<<<<<< HEAD
 import Teller from './Nader/Teller';
 import Vault from './Nader/Vault/Vault';
 import Cash from './Nader/Cash/Cash';
-=======
 import PaymentOrder from './PO/PO';
 import DemandDraft from './DD/DD';
-import Teller from './Nader/Teller'
->>>>>>> ca34061bd86896d2c7a346f58e0250babb633f39
 function App() {
   return (
     <>
