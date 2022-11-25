@@ -7,45 +7,85 @@
 .ulList a,.nav-menu-items a{
     height: 0px !important;
 }
+.mainAch, .mainEswift, .mainSwift{
+    padding: 70px 0 20px 0;
+    height: 100vh;
+}
 .ach{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .eswift{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .swift{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
+.ach span,.eswift span,.swift span{
+    float: left;
+    background-color: var(--fontColor);
+    padding: 10px;
+    border-radius: 10px 0 10px 0 ;
+}
+@media(max-width:500px) {
+    .ach p,
+    .eswift p,
+    .swift p{
+        height: 80%;
+    }
+    .ach .video,
+    .eswift .video,
+    .swift .video{
+        width: 100%;
+    }
+}
+.ach p,.eswift p,.swift p{
+    background-color: var(--DarkGray);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;    
+    box-shadow: -5px 11px 19px #00000091;
+}
+.ach .video span,
+.eswift .video span,
+.swift .video span{
+    background-color: transparent;
+    padding: 0;
+}
+.ach .video,
+.eswift .video,
+.swift .video{
+    width: 80%;
+    margin: auto;
+    box-shadow: -10px 11px 19px #00000091;
+}
+/* .ach, .eswift,
+.swift{
+    text-align: center;
+    border-radius: 20px;
+    height: 80vh;
+    float: left;
+    text-align: left;
+    // background-color: rgba(0, 0, 0, 0.504); 
+} */

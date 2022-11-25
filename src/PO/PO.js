@@ -5,15 +5,36 @@ import Horizontal from '../Horizontal'
 import { SidebarData } from '../Vertical/SidebarData';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-scroll';
+import Vertical from '../Vertical/Navbar'
+import { useState } from 'react';
+import { BiLogInCircle } from "react-icons/bi";
+import mov from './1.MOV'
+import '../../node_modules/video-react/dist/video-react.css'
+import { Player, ControlBar, PlayToggle } from 'video-react';
 const PO = () => {
+    const [open, setOpen] = useState(false);
+    const close = e => {
+        setOpen(current => !current)
+    }
     return (
         <>
-            <Horizontal></Horizontal>
+
         <div className='row'>
             <div className='col-2' style={{padding:0, zIndex:1000}}>
-                <nav className={SidebarData? 'nav-menu active' : 'nav-menu'}>
-                    <ul className={`nav-menu-items ${classes.ulList}`} >
-                        <SubMenu item={'Payment Order-المدفوعات'} />
+                {/* Toggle */}
+                
+                <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                    <ul className= {`nav-menu-items ${classes.ulList}`} >
+
+                    <SubMenu item={'Payment Order'}  style={{float:"left"}}/>
+                    
+                    <div class="toggle-setting">
+                        <p 
+                            onClick={close}
+                            className={ "fa-gear "}><BiLogInCircle/></p>
+                    </div>
+                    
+                {/* End Toggle */}
                         <Link to='ach'>
                             <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />}  item={'ACH'}/>
                         </Link>
@@ -28,42 +49,90 @@ const PO = () => {
                     </ul>
                 </nav>
             </div>
-            <div className='col-9' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-lg-10' style={{color:'white',padding:0, margin:'auto'}}>
+            <Horizontal ></Horizontal>
 
-                <div className={classes.ach} id="ach">
-                    1- AAPO (MAKER) <br></br>
-                        -Add ACH Payment Order <br></br>
-                    2- MPOR (CHECKER) <br></br>
-                        -Maintain Payment Order <br></br>
-                        <p>
-                            -داخل مصر
-                        </p>
+                <div className={classes.mainAch} id="ach">
+                <div className={classes.ach} style={{padding:30}}>
+                    <span>ACH</span>
+                    <p>
+                        <br></br>
+                        <br></br>
+                        1- AAPO (MAKER)<br></br>
+                        -Add ACH Payment Order<br></br>
+                        2- MPOR (CHECKER)<br></br>
+                        -Maintain Payment Order<br></br>
+                        -داخل مصر
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
+                    </div>
+                </div>
                 </div>
 
-                <div className={classes.eswift} id="eswift">
-                    1- AEPO (MAKER) <br></br>
-                        -Add E-Swift Payment Order <br></br>
-                    2- MPOR (CHECKER) <br></br>
-                        -Maintain Payment Order <br></br>
-                        <p>
-                            -داخل مصر
-                        </p>
+                <div className={classes.mainEswift} id="eswift">
+                <div className={classes.eswift} style={{padding:30}}>
+                    <span>E-Swift</span>
+                    <p>
+                        <br></br>
+                        <br></br>
+                        1- AEPO (MAKER)<br></br>
+                        -Add E-Swift Payment Order<br></br>
+                        2- MPOR (CHECKER)<br></br>
+                        -Maintain Payment Order<br></br>
+                        -داخل مصر
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
+                    </div>
                 </div>
-
-                <div className={classes.swift} id="swift">
-                    1- ASPO (MAKER) <br></br>
-                        -Add Swift Payment Order <br></br>
-                    2- MPOR (CHECKER) <br></br>
-                        -Maintain Payment Order <br></br>
-                        <p>
-                            -خارج مصر
-                            -ممكن يبقي داخل مصر بس بتكلفة اعلي من المتاح بالداخل
-                        </p>
                 </div>
+                
 
-
-            </div>
-        </div>
+                <div className={classes.mainSwift} id="swift">
+                <div className={classes.swift} style={{padding:30}}>
+                    <span>Swift</span>
+                    <p>
+                        <br></br>
+                        <br></br>
+                        1- ASPO (MAKER)<br></br>
+                        -Add Swift Payment Order<br></br>
+                        2- MPOR (CHECKER)<br></br>
+                        -Maintain Payment Order<br></br>
+                        -خارج مصر<br></br>
+                        -ممكن يبقي داخل مصر بس بتكلفة اعلي من المتاح بالداخل
+                    </p>
+                    <div className={classes.video} 
+                            onContextMenu={(e)=> e.preventDefault()}>
+                        <Player
+                            playsInline
+                            src={mov}
+                        >
+                            <ControlBar autoHide={false} disableDefaultControls={false}>
+                                <PlayToggle />
+                            </ControlBar>
+                        </Player>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
         </>
     );
 }

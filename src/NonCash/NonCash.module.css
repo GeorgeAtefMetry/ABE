@@ -1,3 +1,31 @@
+.transfer span,
+.customerInduced span,
+.bankInduced span,
+.postTransfer span,
+.reversal span{
+    float: left;
+    background-color: var(--fontColor);
+    padding: 10px;
+    border-radius: 10px 0 10px 0 ;
+}
+.transfer .video span,
+.customerInduced .video span,
+.bankInduced .video span,
+.postTransfer .video span,
+.reversal .video span{
+    background-color: transparent;
+    padding: 0;
+}
+.transfer .video,
+.customerInduced .video,
+.bankInduced .video,
+.postTransfer .video,
+.reversal .video{
+    width: 80%;
+    margin: auto;
+    box-shadow: -10px 11px 19px #00000091;
+}
+
 .ulList a:focus{
     background-color: #252831;
 }
@@ -7,73 +35,94 @@
 .ulList a,.nav-menu-items a{
     height: 0px !important;
 }
+.mainTransfer, .mainCI, .mainBI, .mainPost, .mainReversal{
+    padding: 70px 0 20px 0;
+    height: 100vh;
+}
+@media(max-width:500px) {
+    .transfer p,
+    .customerInduced p,
+    .bankInduced p,
+    .postTransfer p,
+    .reversal p{
+        height: 80%;
+    }
+    .transfer .video,
+    .customerInduced .video,
+    .bankInduced .video,
+    .postTransfer .video,
+    .reversal .video{
+        width: 100%;
+    }
+}
 .transfer{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .customerInduced{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .bankInduced{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .postTransfer{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .reversal{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
+}
+.transfer, .customerInduced,
+.bankInduced, .postTransfer, .reversal{
+    text-align: center;
+    border-radius: 20px;
+    height: 80vh;
+    float: left;
+    text-align: left;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+}
+.transfer p,
+.customerInduced p,
+.bankInduced p,
+.postTransfer p,
+.reversal p{
+    background-color: var(--DarkGray);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;    
+    box-shadow: -5px 11px 19px #00000091;
 }

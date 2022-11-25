@@ -16,7 +16,7 @@ const Inquires = () => {
     const close = e => {
         setOpen(current => !current)
     }
-    // kkkkktttddd
+    
     return (
         <>
 
@@ -29,7 +29,7 @@ const Inquires = () => {
                 <nav className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
-                    <SubMenu item={'INQUIRES - استعلامات'}  style={{float:"left"}}/>
+                    <SubMenu item={'INQUIRES-استعلامات'}  style={{float:"left"}}/>
                     
                     <div class="toggle-setting">
                         <p 

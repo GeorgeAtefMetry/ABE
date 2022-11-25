@@ -26,8 +26,8 @@ const NavbarMain = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/Vault">Vault</Nav.Link>
-            <Nav.Link href="/Transactions">Transactions</Nav.Link>
-            <Nav.Link href="/Transfer">Transfer</Nav.Link>
+            <Nav.Link href="/Cash">Cash</Nav.Link>
+            <Nav.Link href="/nonCash">NonCash</Nav.Link>
             <Nav.Link href="/paymentOrder">PaymentOrder</Nav.Link>
             <Nav.Link href="/demandDraft">DemandDraft</Nav.Link>
             <Nav.Link href="/inquires">Inquires</Nav.Link>
