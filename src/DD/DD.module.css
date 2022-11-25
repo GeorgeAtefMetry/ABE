@@ -1,3 +1,4 @@
+
 .ulList a:focus{
     background-color: #252831;
 }
@@ -7,101 +8,155 @@
 .ulList a,.nav-menu-items a{
     height: 0px !important;
 }
-.issue{
-    width: 100%;
-    margin-top: 20px;
+.mainIssue, .mainDisbursement, .mainStop, .mainLost, .mainPrint, .mainReprint, .mainCancel{
+    padding: 70px 0 20px 0;
+    height: 100vh;
+}
+
+.issue, .disbursement,
+.stop, .lost, .print, .reprint, .cancel{
+    text-align: center;
+    border-radius: 20px;
+    height: 80vh;
     float: right;
     text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+}
+
+.issue p,
+.disbursement p,
+.stop p,
+.lost p,
+.print p,
+.reprint p,
+.cancel p{
+    background-color: var(--DarkGray);
+    color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;    
+    box-shadow: -5px 11px 19px #00000091;
+}
+.issue span,
+.disbursement span,
+.stop span,
+.lost span,
+.print span,
+.reprint span,
+.cancel span{
+    float: left;
+    background-color: var(--fontColor);
+    padding: 10px;
+    border-radius: 10px 0 10px 0 ;
+}
+
+.issue .video span,
+.disbursement .video span,
+.stop .video span,
+.lost .video span,
+.print .video span,
+.reprint .video span,
+.cancel .video span{
+    background-color: transparent;
+    padding: 0;
+}
+.issue .video,
+.disbursement .video,
+.stop .video,
+.lost .video,
+.print .video,
+.reprint .video,
+.cancel .video
+{
+    width: 80%;
+    margin: auto;
+    box-shadow: -10px 11px 19px #00000091;
+}
+.issue{
+    width: 100%;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .disbursement{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .stop{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .lost{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .print{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .reprint{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
 }
 .cancel{
     width: 100%;
-    margin-top: 20px;
-    float: right;
-    text-align: right;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.504);
-    padding: 30px 10px;
-    border-radius: 20px;
-    height: 90vh;
     float: left;
     text-align: left;
-    font-weight: bold;
+    font-size: 15px;
+    /* background-color: rgba(0, 0, 0, 0.504); */
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 100vh;
+}
+
+@media(max-width:500px) {
+    .ial p,
+    .ianc p,
+    .iddt p,
+    .icb p{
+        height: 80%;
+    }
+    .issue .video,
+    .disbursement .video,
+    .stop .video,
+    .lost .video,
+    .print .video,
+    .reprint .video,
+    .cancel .video{ 
+        width: 100%;
+    }
 }

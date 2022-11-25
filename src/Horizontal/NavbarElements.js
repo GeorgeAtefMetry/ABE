@@ -6,8 +6,9 @@ export const Nav = styled.nav`
   height: 10vh;
   display: flex;
   z-index: 1; 
+  position: fixed;
   clear:both;
-  // position:sticky;
+  width:100%;
   top: 0;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
