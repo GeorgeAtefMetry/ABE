@@ -13,32 +13,32 @@ class Teller extends Component {
   <Horizontal/>
 <div className='row '>    
         <div className={classes.buttons}>
-            <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopLeft'>
+              <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopLeft'>
 
-             <a href="/Vault"><Button   variant="primary ">Vault</Button></a>
-            </div>
-            <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
-               <a href='/Cash'> <Button variant="primary">Cash</Button></a>
-            </div>
-            {/* ttt */}
-           
+              <a href="/Vault"><Button   variant="primary ">Vault</Button></a>
+              </div>
+              <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
+                <a href='/Cash'> <Button variant="primary">Cash</Button></a>
+              </div>
+              {/* ttt */}
+            
         </div>
         <div className='row'>
           <div className={classes.buttons}>
           <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
-          <Button   variant="primary ">Inquiers</Button></div>
+          <a href='/inquires'> <Button variant="primary">Inquires</Button></a>
+          </div>
 
           <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
-          <Button   variant="primary ">Payment Order</Button></div>
+          <a href='/paymentOrder'> <Button variant="primary ">Payment Order</Button></a>
+          </div>
 
         </div>
-       
-
     </div>
     <div className='row '>    
         <div className={classes.buttons}>
             <div className='col-lg-3 col-md-4  animate__animated animate__fadeInBottomLeft '>
-            <a href='/inquires'> <Button   variant="primary">Non Cash</Button></a>
+            <a href='/nonCash'> <Button   variant="primary">Non Cash</Button></a>
             </div>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInBottomRight '>
             <a href='/demandDraft'>  <Button variant="primary">Demand Draft</Button></a>
@@ -46,7 +46,6 @@ class Teller extends Component {
             
         </div>
     </div>
-=======
     
 </div>
     
