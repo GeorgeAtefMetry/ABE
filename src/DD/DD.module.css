@@ -1,0 +1,107 @@
+.ulList a:focus{
+    background-color: #252831;
+}
+.ulList a:focus  svg{
+    color: yellow;
+}
+.ulList a,.nav-menu-items a{
+    height: 0px !important;
+}
+.issue{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.disbursement{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.stop{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.lost{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.print{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.reprint{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+.cancel{
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 30px 10px;
+    border-radius: 20px;
+    height: 90vh;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}

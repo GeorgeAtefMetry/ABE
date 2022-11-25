@@ -7,7 +7,6 @@ import {
   NavMenu
 } 
 from './NavbarElements';
-import { IoMdLogOut } from 'react-icons/io';
 const Navbar = () => {
   return (
     <>
@@ -25,10 +24,10 @@ const Navbar = () => {
           <NavLink to='/Transfer' activeStyle>
             Transfer
           </NavLink> 
-          <NavLink to='/Payment' activeStyle>
+          <NavLink to='/paymentOrder' activeStyle>
             Payment Order
           </NavLink> 
-          <NavLink to='/Demond' activeStyle>
+          <NavLink to='/demandDraft' activeStyle>
             Demond Draft
           </NavLink> 
           <NavLink to='/inquires'  activeStyle>
