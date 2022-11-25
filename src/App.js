@@ -11,7 +11,9 @@ import Teller from './Nader/Teller'
 function App() {
   return (
     <>
+    
     <Router>
+      
           <Switch>
           <Route path="/teller" exact component={Teller}></Route>
 

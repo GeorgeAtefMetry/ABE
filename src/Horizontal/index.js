@@ -11,7 +11,7 @@ import { IoMdLogOut } from 'react-icons/io';
 const Navbar = () => {
   return (
     <>
-      <Nav className='fixed-top' >
+      <Nav className='navbar-expand-sm fixed-top'>
         <NavLink to='/' style={{marginBottom:100}}>
         <img style={{ width:'70px'}}src={logoAgri} />
         </NavLink>

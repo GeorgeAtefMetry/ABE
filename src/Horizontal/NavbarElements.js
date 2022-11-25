@@ -6,9 +6,11 @@ export const Nav = styled.nav`
   height: 10vh;
   display: flex;
   z-index: 1; 
+  clear:both;
+  // position:sticky;
+  top: 0;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
 `;
 
 export const NavLink = styled(Link)`
