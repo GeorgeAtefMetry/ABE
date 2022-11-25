@@ -19,7 +19,7 @@ function App() {
     <Router>
       
           <Switch>
-          <Route path="/teller" exact component={Teller}></Route>
+          <Route path="/Teller" exact component={Teller}></Route>
           <Route path="/Vault" exact component={Vault}></Route>
           <Route path="/Cash" exact component={Cash}></Route>
 

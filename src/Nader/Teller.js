@@ -20,6 +20,7 @@ class Teller extends Component {
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
                <a href='/Cash'> <Button variant="primary">Cash</Button></a>
             </div>
+            {/* ttt */}
            
         </div>
         <div className='row'>
