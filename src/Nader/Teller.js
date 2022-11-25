@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classes from '../DetailsPage/detailsPage.module.css'
 import Button from 'react-bootstrap/Button';
 import 'animate.css';
-
+import Horizontal from'../Horizontal/index';
 class Teller extends Component {
  
   render() { 
@@ -10,26 +10,28 @@ class Teller extends Component {
       <>
 
 <div className='container-fluid'>
+  <Horizontal/>
 <div className='row '>    
         <div className={classes.buttons}>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopLeft'>
-              <Button   variant="primary ">Vault</Button>
-              </div>
-              <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
-                  <Button variant="primary">Cash</Button>
-              </div>
 
+             <a href="/Vault"><Button   variant="primary ">Vault</Button></a>
+            </div>
+            <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
+               <a href='/Cash'> <Button variant="primary">Cash</Button></a>
+            </div>
+           
         </div>
         <div className='row'>
           <div className={classes.buttons}>
-            <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>
-              <a href='/inquires'> <Button   variant="primary ">Inquires</Button></a>
-            </div>
-            <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>
-              <a href='/paymentOrder'> <Button   variant="primary ">Payment Order</Button></a>
-            </div>
-          </div>
+          <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
+          <Button   variant="primary ">Inquiers</Button></div>
+
+          <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
+          <Button   variant="primary ">Payment Order</Button></div>
+
         </div>
+       
 
     </div>
     <div className='row '>    
@@ -43,6 +45,10 @@ class Teller extends Component {
             
         </div>
     </div>
+=======
+    
+</div>
+    
     </div>
 
     
