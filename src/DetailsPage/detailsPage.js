@@ -3,6 +3,8 @@ import classes from './detailsPage.module.css'
 import logo from '../images/logo.png'
 import infoSys from '../images/infosys.png'
 import Button from 'react-bootstrap/Button';
+import 'animate.css';
+
 const DetailsPage = () => {
 
     return (
@@ -22,9 +24,9 @@ const DetailsPage = () => {
             <div className='row'>
 
                 
-        {/* _________________________________________________________________ */}
+        {/* ___ht______________________________________________________________ */}
                 <div className={classes.buttons}>
-                <div className='col-lg-3 col-md-4 animate__animated animate__bounceInLeft '>
+                    <div className='col-lg-3 col-md-4 animate__animated animate__bounceInLeft '>
                     <a href='/Teller'> <Button variant="primary">Teller</Button></a>
                     </div>
                     <div className='col-lg-3 col-md-4 animate__animated animate__bounceInDown'>

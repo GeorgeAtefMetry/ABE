@@ -35,6 +35,8 @@ const Inquires = () => {
                             <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'ICB '} />
                         </Link>
 
+                        
+
                     </ul>
                 </nav>
             </div>

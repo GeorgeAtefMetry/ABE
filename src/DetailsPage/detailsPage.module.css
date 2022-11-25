@@ -27,6 +27,7 @@ body{
     align-items: center;
     text-align: center;
     min-height: 30vh;
+    margin-top: 10px;
 }
 .buttons button{
     font-size: 35px;
@@ -42,7 +43,7 @@ body{
 .buttons button:focus-visible, .buttons button:focus, .buttons button:active, .buttons button:hover{
     transition:  all .5s;
     background-color: var(--green) !important;
-    font-size: 40px;
+    font-size: 36px;
 }
 @media screen and (max-width:480px){
 

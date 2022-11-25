@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classes from '../DetailsPage/detailsPage.module.css'
 import Button from 'react-bootstrap/Button';
 import 'animate.css';
-
+import Horizontal from'../Horizontal/index';
 class Teller extends Component {
  
   render() { 
@@ -10,24 +10,28 @@ class Teller extends Component {
       <>
 
 <div className='container-fluid'>
+  <Horizontal/>
 <div className='row '>    
         <div className={classes.buttons}>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopLeft'>
-             <Button   variant="primary ">Vault</Button>
+             <a href="/Vault"><Button   variant="primary ">Vault</Button></a>
             </div>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInTopRight '>
-                <Button variant="primary">Cash</Button>
+               <a href='/Cash'> <Button variant="primary">Cash</Button></a>
             </div>
            
         </div>
         <div className='row'>
           <div className={classes.buttons}>
-          <div className='col-lg-3 col-md-10 animate__animated animate__zoomIn'>
-          <Button   variant="primary ">Inquier</Button>
 
-</div>
+          <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
+          <Button   variant="primary ">Inquiers</Button></div>
+
+          <div className='col-lg-3 col-md-4 animate__animated animate__zoomIn'>
+          <Button   variant="primary ">Payment Order</Button></div>
+
           </div>
-
+          
         </div>
 
     </div>
@@ -37,7 +41,7 @@ class Teller extends Component {
              <Button   variant="primary">Non Cash</Button>
             </div>
             <div className='col-lg-3 col-md-4 animate__animated animate__fadeInBottomRight '>
-                <Button variant="primary">Cheque</Button>
+                <Button variant="primary">Demand Draft</Button>
             </div>
             
             
