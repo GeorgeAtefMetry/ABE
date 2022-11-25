@@ -17,7 +17,7 @@ const Inquires = () => {
         setOpen(current => !current)
     }
     // sss
-    
+    // ppp
     return (
         <>
 
