@@ -16,7 +16,7 @@ const Inquires = () => {
     const close = e => {
         setOpen(current => !current)
     }
-    // kkkkk
+    // kkkkkttt
     return (
         <>
 
