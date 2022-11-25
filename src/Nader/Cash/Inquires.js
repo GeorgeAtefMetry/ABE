@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Inquires.module.css'
+// import './inquire.css'
 import Vertical from '../../Vertical/Navbar'
 import SubMenu from '../../Vertical/SubMenu';
 import Horizontal from '../../Horizontal'
@@ -9,15 +10,30 @@ import { Link } from 'react-scroll';
 import mov from './1.MOV'
 import '../../../node_modules/video-react/dist/video-react.css'
 import { Player, ControlBar, PlayToggle } from 'video-react';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 const Inquires = () => {
+    function close(e) {
+        e.className= ''
+    }
     return (
         <>
-            <Horizontal></Horizontal>
+
+        
+        
+        
         <div className='row'>
             <div className='col-2' style={{padding:0, zIndex:1000}}>
                 <nav className={SidebarData? 'nav-menu active' : 'nav-menu'}>
                     <ul className={`nav-menu-items ${classes.ulList}`} >
-                        <SubMenu item={'CASH- العمليات النقدية'} />
+                    {/* <button onClick={(e) => close(e.target)} style={{float:"right"}}>=</button>  */}
+                    
+                    <SubMenu item={'Cash - العمليات النقدية'}  style={{float:"left"}}/>
 
                         <Link to='mcdtd'>
                             <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />}  item={'MCDTD'}/>
@@ -34,76 +50,119 @@ const Inquires = () => {
                         <Link to='pvt'>
                             <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'PVT '} />
                         </Link>
+
                         <Link to='cfccetd'>
-                            <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'CFCCETD '} />
+                            <SubMenu icon={<AiIcons.AiTwotoneStar style={{fontSize: '20px'}} />} item={'CFCCETD'} />
                         </Link>
 
-                       
 
-
-
-
+                        
 
                     </ul>
                 </nav>
             </div>
+
             <div className='col-9' style={{color:'white',padding:0, margin:'auto'}}>
-
-                <div className={classes.ial} id="ial" style={{marginTop:50}}>
-                    <div className={classes.video} 
-                            onContextMenu={(e)=> e.preventDefault()}>
-                    <span>MCDTD -  Maintain Cash Deposit Transaction Details</span>
-                        <Player
-                            playsInline
-                            src={mov}
-                        >
-                            <ControlBar autoHide={false} disableDefaultControls={true}>
-                                <PlayToggle />
-                            </ControlBar>
-                        </Player>
+            <Horizontal ></Horizontal>
+            
+            <div className={classes.mainIal} id="mcdtd">
+                    <div className={classes.ial} style={{padding:30}}>
+                            <span>MCDTD</span>
+                        <p>
+                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                        </p>
+                        <div className={classes.video} 
+                                onContextMenu={(e)=> e.preventDefault()}>
+                            <Player
+                                playsInline
+                                src={mov}
+                            >
+                                <ControlBar autoHide={false} disableDefaultControls={true}>
+                                    <PlayToggle />
+                                </ControlBar>
+                            </Player>
+                        </div>
                     </div>
-                    
                 </div>
 
-                <div className={classes.ianc} id="mcdtd">
-                    قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                <div className={classes.mainIanc} id="mcwtd">
+                    <div className={classes.ianc} style={{padding:30}}>
+                            <span>MCWTD</span>
+                        <p>
+                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                        </p>
+                        <div className={classes.video} 
+                                onContextMenu={(e)=> e.preventDefault()}>
+                            <Player
+                                playsInline
+                                src={mov}
+                            >
+                                <ControlBar autoHide={false} disableDefaultControls={true}>
+                                    <PlayToggle />
+                                </ControlBar>
+                            </Player>
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.mainIanc} id="pct">
+                    <div className={classes.ianc} style={{padding:30}}>
+                            <span>PCT</span>
+                        <p>
+                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                        </p>
+                        <div className={classes.video} 
+                                onContextMenu={(e)=> e.preventDefault()}>
+                            <Player
+                                playsInline
+                                src={mov}
+                            >
+                                <ControlBar autoHide={false} disableDefaultControls={true}>
+                                    <PlayToggle />
+                                </ControlBar>
+                            </Player>
+                        </div>
+                    </div>
                 </div>
 
-                <div className={classes.iddt} id="mcwtd">
-                    <span>Inquire on Demand Draft</span>
-                    <br></br>
-                        شاشه خاصه بالاستعلام عن الشيك/ الشيكات المصرفية ..
-
-                        .... الشيك المصرفي زي ما اتفقنا القيمة بتتخصم من ح/ العميل وبيتم إضافتها إلي ح/ داخلي ...
-                        إسم الحساب الداخلي ده ح/ اوراق دفع إصدار شيكات مصرفية،،،،،،، قد يختلف المسمى من بنك لبنك ومن شجرة محاسبية إلى شجرة محاسبية اخرى لكن عندي الشئ المشترك ان البنك بيحصل على قيمة الشيك من العميل بمجرد قيام العميل بطلب اصدار الشيك وبيديله شيك محرر على نماذج البنك.
-
-                        بمعنى تان وانا داخل استعلم بدخل برقم الشيك إللي بيخص البنك وليس من دفتر شيكات العملاء وهكذا...
+                <div className={classes.mainIanc} id="pvt">
+                    <div className={classes.ianc} style={{padding:30}}>
+                            <span>PVT</span>
+                        <p>
+                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                        </p>
+                        <div className={classes.video} 
+                                onContextMenu={(e)=> e.preventDefault()}>
+                            <Player
+                                playsInline
+                                src={mov}
+                            >
+                                <ControlBar autoHide={false} disableDefaultControls={true}>
+                                    <PlayToggle />
+                                </ControlBar>
+                            </Player>
+                        </div>
+                    </div>
                 </div>
 
-                <div className={classes.icb} id="pct">
-                    <span>INQUIRE ON CHEQUE BOOK</span>
-                    <br></br>
-                    بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
+                <div className={classes.mainIanc} id="cfccetd">
+                    <div className={classes.ianc} style={{padding:30}}>
+                            <span>CFCCETD</span>
+                        <p>
+                        قايمه بستعلم منها عن حساب الشيك ’العادي‘ حساب الساحب ( الساحب هو العميل صاحب الحساب) إللي هو من دفتر شيكات العميل بس هنا بستعلم بمعلومية رقم الشيك* ومتاح ليا اختار الفرع وبعد كدا ابحث
+                        </p>
+                        <div className={classes.video} 
+                                onContextMenu={(e)=> e.preventDefault()}>
+                            <Player
+                                playsInline
+                                src={mov}
+                            >
+                                <ControlBar autoHide={false} disableDefaultControls={true}>
+                                    <PlayToggle />
+                                </ControlBar>
+                            </Player>
+                        </div>
+                    </div>
                 </div>
-
-                <div className={classes.icb} id="pvt">
-                    <span>INQUIRE ON CHEQUE BOOK</span>
-                    <br></br>
-                    بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
-                    بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
-
-                </div>
-
-                <div className={classes.icb} id="cfccetd">
-                    <span>INQUIRE ON CHEQUE BOOK</span>
-                    <br></br>
-                    بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
-                    بقدر استعلم منها على دفتر الشيكات كله للعميل مش شيك واحد
-
-                </div>
-                
-
-
             </div>
         </div>
         </>
