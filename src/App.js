@@ -7,13 +7,21 @@ import {
 import DetailsPage from './DetailsPage/detailsPage'
 import './App.css'
 import Inquires from './Inquires/Inquires';
+<<<<<<< HEAD
 import Teller from './Nader/Teller';
 import Vault from './Nader/Vault/Vault';
 import Cash from './Nader/Cash/Cash';
+=======
+import PaymentOrder from './PO/PO';
+import DemandDraft from './DD/DD';
+import Teller from './Nader/Teller'
+>>>>>>> ca34061bd86896d2c7a346f58e0250babb633f39
 function App() {
   return (
     <>
+    
     <Router>
+      
           <Switch>
           <Route path="/teller" exact component={Teller}></Route>
           <Route path="/Vault" exact component={Vault}></Route>
@@ -24,6 +32,8 @@ function App() {
             <Route path="/ABE" exact component={DetailsPage}></Route>
             <Route path="/detailspage" exact component={DetailsPage}></Route>
             <Route path="/inquires" exact component={Inquires}></Route>
+            <Route path="/paymentOrder" exact component={PaymentOrder}></Route>
+            <Route path="/demandDraft" exact component={DemandDraft}></Route>
             {/* <Route path="*"  component={DetailsPage}></Route> */}
           </Switch>
         </Router> 

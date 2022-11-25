@@ -7,11 +7,10 @@ import {
   NavMenu
 } 
 from './NavbarElements';
-import { IoMdLogOut } from 'react-icons/io';
 const Navbar = () => {
   return (
     <>
-      <Nav className='fixed-top' >
+      <Nav className='navbar-expand-sm fixed-top'>
         <NavLink to='/' style={{marginBottom:100}}>
         <img style={{ width:'70px'}}src={logoAgri} />
         </NavLink>
@@ -25,10 +24,10 @@ const Navbar = () => {
           <NavLink to='/Transfer' activeStyle>
             Transfer
           </NavLink> 
-          <NavLink to='/Payment' activeStyle>
+          <NavLink to='/paymentOrder' activeStyle>
             Payment Order
           </NavLink> 
-          <NavLink to='/Demond' activeStyle>
+          <NavLink to='/demandDraft' activeStyle>
             Demond Draft
           </NavLink> 
           <NavLink to='/inquires'  activeStyle>
