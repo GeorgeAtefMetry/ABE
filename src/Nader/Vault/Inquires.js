@@ -79,7 +79,7 @@ const Inquires = () => {
                 </nav>
             </div>
 
-            <div className='col-lg-9 col-12' style={{color:'white',padding:0,zIndex}}>
+            <div className='col-lg-9 col-12' style={{color:'white',padding:0}}>
             <Horizontal ></Horizontal>
             
             <div className={classes.mainIal} id="ovcd">

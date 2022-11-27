@@ -2,15 +2,13 @@ import React from 'react';
 import classes from './PO.module.css'
 import SubMenu from '../Vertical/SubMenu';
 import Horizontal from '../Horizontal'
-import { SidebarData } from '../Vertical/SidebarData';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-scroll';
-import Vertical from '../Vertical/Navbar'
-import { useState } from 'react';
-import { BiLogInCircle } from "react-icons/bi";
 import mov from './1.MOV'
 import '../../node_modules/video-react/dist/video-react.css'
 import { Player, ControlBar, PlayToggle } from 'video-react';
+import { useState } from 'react';
+import { BiLogInCircle } from "react-icons/bi";
 const PO = () => {
     const [open, setOpen] = useState(false);
     const close = e => {
@@ -22,12 +20,12 @@ const PO = () => {
             <div className='col-2' style={{zIndex:1000}}>
                 {/* Toggle */}
                 
-                <nav style={{paddingRight:16}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                <nav style={{paddingRight:16}} className={open? 'nav-menu active ' : `nav-menu  ${classes.activeClose}` }>
                     <ul className= {`nav-menu-items ${classes.ulList}`} >
 
                     <SubMenu item={'Payment Order'}  style={{float:"left"}}/>
                     
-                    <div className="toggle-setting">
+                    <div className={classes.toggleSetting}>
                         <p 
                             onClick={close}
                             className={ "fa-gear "}><BiLogInCircle/></p>

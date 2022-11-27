@@ -17,22 +17,31 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useState } from 'react';
+import { BiLogInCircle } from "react-icons/bi";
 const Inquires = () => {
-    function close(e) {
-        e.className= ''
+    const [open, setOpen] = useState(false);
+    const close = e => {
+        setOpen(current => !current)
     }
     return (
         <>
+<div className='row'>
+            <div className='col-2' style={{zIndex:1000,marginRight:10}}>
+                {/* Toggle */}
 
-        
-        
-        
-        <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
-                <nav className={SidebarData? 'nav-menu active' : 'nav-menu'}>
-                    <ul className={`nav-menu-items ${classes.ulList}`} >
-                    {/* <button onClick={(e) => close(e.target)} style={{float:"right"}}>=</button>  */}
+                <nav style={{padding:6}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                    <ul className= {`nav-menu-items ${classes.ulList}`} >
+
+                    <SubMenu item={'INQUIRES-استعلامات'}  style={{float:"left"}}/>
                     
+                    <div class="toggle-setting">
+                        <p 
+                            onClick={close}
+                            className={ "fa-gear "}><BiLogInCircle/></p>
+                    </div>
+                    
+                {/* End Toggle */}
                     <SubMenu item={'Cash - العمليات النقدية'}  style={{float:"left"}}/>
 
                         <Link to='mcdtd'>
@@ -62,7 +71,7 @@ const Inquires = () => {
                 </nav>
             </div>
 
-            <div className='col-9' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-12 col-lg-10' style={{color:'white',padding:0, margin:'auto'}}>
             <Horizontal ></Horizontal>
             
             <div className={classes.mainIal} id="mcdtd">

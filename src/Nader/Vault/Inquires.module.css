@@ -80,3 +80,17 @@
     text-align: left;
     font-weight: bold;
 }
+@media(max-width:500px) {
+    .ial p,
+    .ianc p,
+    .iddt p,
+    .icb p{
+        height: 80%;
+    }
+    .ial .video,
+    .ianc .video,
+    .iddt .video,
+    .icb .video{
+        width: 100%;
+    }
+}

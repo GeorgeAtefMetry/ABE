@@ -68,7 +68,7 @@
 .reprint .video,
 .cancel .video
 {
-    width: 80%;
+    width: 50%;
     margin: auto;
     box-shadow: -10px 11px 19px #00000091;
 }
@@ -144,18 +144,21 @@
 }
 
 @media(max-width:500px) {
-    .ial p,
-    .ianc p,
-    .iddt p,
-    .icb p{
+    .issue p,
+    .disbursement p,
+    .stop p,
+    .lost p,
+    .print p,
+    .reprintp,
+    .cancel p{
         height: 80%;
     }
-    .issue .video,
-    .disbursement .video,
-    .stop .video,
-    .lost .video,
-    .print .video,
-    .reprint .video,
+    .issue .video ,
+    .disbursement ,
+    .stop .video ,
+    .lost .video ,
+    .print .video ,
+    .reprint .vide,
     .cancel .video{ 
         width: 100%;
     }

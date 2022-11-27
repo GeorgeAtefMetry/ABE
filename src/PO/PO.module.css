@@ -11,6 +11,37 @@
     padding: 70px 0 20px 0;
     height: 100vh;
 }
+@media(max-width:500px) {
+    .toggleSetting{
+        display: block;
+        right: -25%;
+        position: absolute;
+        text-align: center;
+        top: 15%;
+        background-color: #FFF;
+        padding: 0px 30px 0 10px;
+        border-radius: 0 10px 10px 0;
+        width: 15px;
+        font-size: 27px;
+        cursor: pointer;
+        transition: .3s;
+        color:var(--fontColor);
+        height:45px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
+        transition: 1s;
+    }
+    .fa-gear{
+        margin: 0;
+        transition: 1s;
+    }
+    .toggleSetting:hover{
+        transition: 1s;
+    }
+    .activeClose{
+        left:-170px !important;
+        transition: 1s;
+    }
+}
 .ach{
     width: 100%;
     float: left;
