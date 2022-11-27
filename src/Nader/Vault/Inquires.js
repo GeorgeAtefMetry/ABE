@@ -7,19 +7,15 @@ import Horizontal from '../../Horizontal'
 import { SidebarData } from '../../Vertical/SidebarData';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 import mov from './1.MOV'
 import '../../../node_modules/video-react/dist/video-react.css'
 import { Player, ControlBar, PlayToggle } from 'video-react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { BiLogInCircle } from "react-icons/bi";
 const Inquires = () => {
-    function close(e) {
-        e.className= ''
+    const [open, setOpen] = useState(false);
+    const close = e => {
+        setOpen(current => !current)
     }
     return (
         <>
@@ -27,12 +23,22 @@ const Inquires = () => {
         
         
         
-        <div className='row'>
-            <div className='col-2' style={{padding:0, zIndex:1000}}>
-                <nav className={SidebarData? 'nav-menu active' : 'nav-menu'}>
-                    <ul className={`nav-menu-items ${classes.ulList}`} >
-                    {/* <button onClick={(e) => close(e.target)} style={{float:"right"}}>=</button>  */}
+<div className='row'>
+            <div className='col-2' style={{zIndex:1000}}>
+                {/* Toggle */}
+
+                <nav style={{padding:1}} className={open? 'nav-menu active ' : 'nav-menu activeClose' }>
+                    <ul className= {`nav-menu-items ${classes.ulList}`} >
+
+                    <SubMenu item={'INQUIRES-استعلامات'}  style={{float:"left"}}/>
                     
+                    <div class="toggle-setting">
+                        <p 
+                            onClick={close}
+                            className={ "fa-gear "}><BiLogInCircle/></p>
+                    </div>
+                    
+                {/* End Toggle */}
                     <SubMenu item={'Vault - الخزينة'}  style={{float:"left"}}/>
 
                         <Link to='ovcd'>
@@ -73,7 +79,7 @@ const Inquires = () => {
                 </nav>
             </div>
 
-            <div className='col-9' style={{color:'white',padding:0, margin:'auto'}}>
+            <div className='col-lg-9 col-12' style={{color:'white',padding:0,zIndex}}>
             <Horizontal ></Horizontal>
             
             <div className={classes.mainIal} id="ovcd">
